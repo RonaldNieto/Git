@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS</title>
+
+	<style>
+form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 100%;
+}
+
+label {display: block;}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=password], select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+</style>
+</head>
+<link rel="stylesheet" href="../css/style.css">
+<body>
+	<div class="container">
+		<header>
+			<nav class="menu">
+				<ul>
+					<li><a href="../index.html">Inicio</a></li>
+					<li><a href="productos.html">Productos</a></li>
+					<li><a href="servicios.html">Servicios</a></li>
+					<li><a href="#">Contacto</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>	
+			<img src="../img/contacto.jpeg" alt="">
+			<div class="main_principal">
+				<h2>Bienvenidos a mi página</h2>
+				<h2>Para comunicarse con un asesor de clic en la imagen de whatsapp</h2> 
+				<p style="text-align: center;">
+				<a href="https://api.whatsapp.com/send/?phone=573153801813&text=Hola%2C+necesito+informaci%C3%B3n&type=phone_number&app_absent=0">
+					<img src="../img/img_boton_whatsapp.png" style="width: 40px;" alt="">
+				</a> </p>
+				<p>Esto es un párrafo dentro de un divisor</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Perferendis doloremque facilis velit quis voluptatibus ullam quam, explicabo eum aut harum repudiandae aliquam, mollitia alias sit veniam eos sapiente pariatur tenetur.</p>
+			</div>
+		</main>
+
+		<h2>Formulario de contacto</h2>
+
+		<form action="/action_page.php">
+			  <label for="fname">Usuario</label>
+			  <input type="text" id="fname" name="firstname" placeholder="Your username..">
+
+			  <label for="lname">Password</label>
+			  <input type="password" id="lname" name="lastname" placeholder="Your password..">
+
+			  <label for="country">Rol</label>
+			  <select id="country" name="country">
+			    <option value="australia">Administrador</option>
+			    <option value="canada">Jefe</option>
+			    <option value="usa">Secretaria</option>
+			  </select>
+			  
+			  <input type="submit" value="Submit">
+		</form>
+
+
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1973.9398143699532!2d-73.59766856604422!3d8.314758989428618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e5d8f7d27c7bf07%3A0xa72b1dc51f284557!2sUniversidad%20Popular%20del%20Cesar%20-%20Aguachica!5e0!3m2!1ses!2sco!4v1773434051656!5m2!1ses!2sco" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+		<footer>
+			<p style="text-align: center;">
+				<a href="https://www.facebook.com/"><img src="../img/boton_facebook.png" alt="" width="40px"></a>
+				<a href="https://www.facebook.com/"><img src="../img/boton_pinteres.png" alt="" width="40px"></a>
+				<a href="https://www.facebook.com/"><img src="../img/boton_instagram.png" alt="" width="40px"></a>
+			</p>
+		</footer>
+	</div>
+</body>
+</html>
